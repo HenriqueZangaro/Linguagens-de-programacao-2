@@ -1,6 +1,4 @@
-# Lista global para armazenar as respostas
 listaDeFrequencia = []
-
 
 def coletarInformacoes():
 
@@ -8,7 +6,7 @@ def coletarInformacoes():
         frequencia = input("Qual elevador você utiliza com mais frequência: A, B ou C? ").strip().upper()
         periodo = input("Em qual período você mais utiliza ele: Manhã(M), Tarde(V) ou Noite(N)? ").strip().upper()
 
-        # validações
+
         if not frequencia or not periodo:
             print("Não pode deixar valores vazios!\n")
             continue
@@ -82,7 +80,7 @@ def rodarPrograma():
     realizarCalculos()
 
 
-rodarPrograma()# Lista global para armazenar as respostas
+rodarPrograma()
 listaDeFrequencia = []
 
 
@@ -92,7 +90,7 @@ def coletarInformacoes():
         frequencia = input("Qual elevador você utiliza com mais frequência: A, B ou C? ").strip().upper()
         periodo = input("Em qual período você mais utiliza ele: Manhã(M), Tarde(V) ou Noite(N)? ").strip().upper()
 
-        # validações
+
         if not frequencia or not periodo:
             print("Não pode deixar valores vazios!\n")
             continue
@@ -122,7 +120,7 @@ def realizarCalculos():
     contPeriodo = {"M": 0, "V": 0, "N": 0}
     contElevadorPeriodo = {}
 
-    # Contagem
+
     for item in listaDeFrequencia:
         elevador = item[0]
         periodo = item[1]
@@ -135,14 +133,12 @@ def realizarCalculos():
             contElevadorPeriodo[chave] = 0
         contElevadorPeriodo[chave] += 1
 
-    # c) Elevador mais utilizado
+
     elevadorMaisUsado = max(contElevador, key=contElevador.get)
     elevadorPeriodoMaisUsado = max(contElevadorPeriodo, key=contElevadorPeriodo.get)
 
-    # d) Período mais utilizado
     periodoMaisUsado = max(contPeriodo, key=contPeriodo.get)
 
-    # e) Diferença percentual
     maior = max(contPeriodo.values())
     menor = min(contPeriodo.values())
 
