@@ -78,3 +78,5 @@ def rodarPrograma():
             break
 
     realizarCalculos()
+
+rodarPrograma()
