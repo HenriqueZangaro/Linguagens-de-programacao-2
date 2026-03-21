@@ -1,0 +1,13 @@
+div {
+    text-align: center;
+    background-color: blue;
+
+}
+
+#lblPeso {
+    background-color: red;
+}
+
+.imc-text {
+    background-color: yellow;
+}
