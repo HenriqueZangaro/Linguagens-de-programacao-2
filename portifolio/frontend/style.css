@@ -82,14 +82,25 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-.progresso {
-    background: greenyellow;
-    height: 15px;
-    border-radius: 5px;
-}
+
 
 #div2 p strong:only-child {
     display: block;
     margin-top: 20px;
     font-size: 16px;
+}
+
+@keyframes raio {
+    0%   { box-shadow: 0 0 0px greenyellow; }
+    50%  { box-shadow: 0 0 15px 5px greenyellow; }
+    100% { box-shadow: 0 0 0px greenyellow; }
+}
+
+.progresso {
+    background: greenyellow;
+    height: 15px;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 1s ease-in-out;
+    animation: raio 1.5s ease-in-out infinite;
 }
