@@ -16,7 +16,7 @@ def get_perfil():
         "nome": "Henrique Zangaro",
         "idade": 20,
         "email": "henrique.eng.prog@gmail.com",
-        "celular": "4002-8922",
+        "celular": "66 99922-7771",
         "formacao": [
             "Engenharia Elétrica (2023 - 2025)",
             "Engenharia da Computação (2025 - )"
@@ -57,8 +57,8 @@ def get_perfil():
                 "descricao": "Portfólio pessoal com HTML e CSS puro."
             },
             {
-                "titulo": "Sistema de Automação Residencial",
-                "descricao": "Projeto com Arduino e sensores para controle de iluminação."
+                "titulo": "Sistema de Gerenciamento de Fazendas",
+                "descricao": "Projeto para controle total de uma fazendo, incluindo um aplicativo que auxilia na visualização de dados e na inserção de dados."
             },
             {
                 "titulo": "Monitoramento de Energia com IoT",
